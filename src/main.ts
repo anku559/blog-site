@@ -1,3 +1,8 @@
+if (process.argv[2] === 'WIN') {
+  console.log(process.argv[2]);
+  require('module-alias/register');
+}
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
