@@ -1,7 +1,7 @@
-if (process.argv[2] === 'WIN') {
-  console.log(process.argv[2]);
-  require('module-alias/register');
-}
+require('module-alias/register');
+// if (process.argv[2] === 'WIN') {
+//   console.log(process.argv[2]);
+// }
 
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
